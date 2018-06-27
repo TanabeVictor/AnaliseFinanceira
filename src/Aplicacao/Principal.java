@@ -89,7 +89,14 @@ public class Principal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
-        Panel_Balanco = new javax.swing.JPanel();
+        Panel_BalancoAvon = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        BP_Empresa1 = new javax.swing.JTable();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel18 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         Panel_Relatorio = new javax.swing.JPanel();
         Panel_Analise = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
@@ -105,6 +112,22 @@ public class Principal extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         panelChart = new javax.swing.JPanel();
         Panel_Sobre = new javax.swing.JPanel();
+        Panel_BalancoNatura = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        BP_Empresa3 = new javax.swing.JTable();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        jLabel22 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        Panel_BalancoUltaBeauty = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        BP_Empresa4 = new javax.swing.JTable();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
+        jLabel24 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -479,18 +502,112 @@ public class Principal extends javax.swing.JFrame {
 
         Panel_Body.add(Panel_Principal, "card2");
 
-        javax.swing.GroupLayout Panel_BalancoLayout = new javax.swing.GroupLayout(Panel_Balanco);
-        Panel_Balanco.setLayout(Panel_BalancoLayout);
-        Panel_BalancoLayout.setHorizontalGroup(
-            Panel_BalancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1070, Short.MAX_VALUE)
+        Panel_BalancoAvon.setPreferredSize(new java.awt.Dimension(1070, 690));
+
+        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(0, 255, 102));
+        jLabel17.setText("Balanço Patrimonial - Avon Products Inc.");
+
+        BP_Empresa1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Total do Ativo",  new Float(3697.9),  new Float(3418.9)},
+                {"Imobilizado Liquido",  new Float(702.7),  new Float(711.3)},
+                {"Imobilizado Bruto",  new Float(1481.9),  new Float(1424.1)},
+                {"Deprec. Acumulada",  new Float(-779.2),  new Float(-712.8)},
+                {"Ágio, Líquido",  new Float(95.7),  new Float(93.6)},
+                {"Intangiveis, LIq",  new Float(85.2),  new Float(83.9)},
+                {"Invest. LP", null,  new Float(68.0)},
+                {"Realizável LP",  new Float(75.6),  new Float(156.9)},
+                {"Outros Ativos LP",  new Float(505.4),  new Float(312.9)},
+                {null, null, null},
+                {"Total do Passivo",  new Float(1559.6),  new Float(1485.7)},
+                {"A Pagar / Acumulado",  new Float(832.2),  new Float(765.1)},
+                {"Investimentos CP",  new Float(535.9),  new Float(531.1)},
+                {"Empréstimos CP / Notas",  new Float(22.6), null},
+                {"Parcela Circ. das Obrigações de Arredondamento Merc.",  new Float(3.1),  new Float(8.1)},
+                {"Outros Passivos Circ.",  new Float(165.8),  new Float(171.4)},
+                {null, null, null},
+                {"Total do Patrimônio Líquido",  new Float(-257.2),  new Float(-403.3)},
+                {"Ágio, Liquido",  new Float(467.8),  new Float(444.7)},
+                {"Ações Ordinárias",  new Float(189.7),  new Float(188.8)},
+                {"Capital Social",  new Float(2291.2),  new Float(2273.9)},
+                {"Lucros Retidos",  new Float(2320.3),  new Float(2322.2)},
+                {"Ações em Tesouraria",  new Float(-4600.0),  new Float(-4599.7)},
+                {"Outros Patrimônios",  new Float(-926.2),  new Float(-1033.2)},
+                {null, null, null},
+                {"Total do Passivo e Patrimônio Líquido",  new Float(3697.9),  new Float(3418.9)}
+            },
+            new String [] {
+                "Dado", "2016", "2017"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Float.class, java.lang.Float.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(BP_Empresa1);
+
+        jScrollPane4.setBackground(new java.awt.Color(43, 43, 43));
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(43, 43, 43));
+        jTextArea2.setColumns(20);
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Razão Social: Avon Products Inc.\nTipo: Empresa de Capital Aberto\n\nAvon Cosméticos ou simplesmente Avon, é uma empresa norte-americana de cosméticos. Sua história teve início em 1886 quando David McConnell iniciou a Califórnia Perfume Company, em Manhattan, Nova York. O nome Avon, pelo qual ficaria mundialmente conhecida, só surgiu em 1939, inspirado na cidade natal do escritor William Shakespeare, Stratford-upon-Avon. No Brasil ela só apareceu em 1952. Ao longo dos anos a Avon desenvolveu diversas linhas de produto, variando entre fragrâncias, maquiagem, cabelos e cuidados da pele, além de uma linha infantil. Através do sistema de venda por folhetos e revendedoras, atingindo significativa participação no mercado de beleza.");
+        jTextArea2.setWrapStyleWord(true);
+        jScrollPane4.setViewportView(jTextArea2);
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/avon-logo.png"))); // NOI18N
+
+        jButton2.setText("Próximo");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Panel_BalancoAvonLayout = new javax.swing.GroupLayout(Panel_BalancoAvon);
+        Panel_BalancoAvon.setLayout(Panel_BalancoAvonLayout);
+        Panel_BalancoAvonLayout.setHorizontalGroup(
+            Panel_BalancoAvonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_BalancoAvonLayout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addGroup(Panel_BalancoAvonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(Panel_BalancoAvonLayout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton2))
+                    .addGroup(Panel_BalancoAvonLayout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 835, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        Panel_BalancoLayout.setVerticalGroup(
-            Panel_BalancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 690, Short.MAX_VALUE)
+        Panel_BalancoAvonLayout.setVerticalGroup(
+            Panel_BalancoAvonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_BalancoAvonLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(Panel_BalancoAvonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(jButton2))
+                .addGap(18, 18, 18)
+                .addGroup(Panel_BalancoAvonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Panel_BalancoAvonLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel18)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE)
+                .addGap(34, 34, 34))
         );
 
-        Panel_Body.add(Panel_Balanco, "card3");
+        Panel_Body.add(Panel_BalancoAvon, "card3");
 
         javax.swing.GroupLayout Panel_RelatorioLayout = new javax.swing.GroupLayout(Panel_Relatorio);
         Panel_Relatorio.setLayout(Panel_RelatorioLayout);
@@ -569,17 +686,16 @@ public class Principal extends javax.swing.JFrame {
                                     .addComponent(jLabel12))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 673, Short.MAX_VALUE)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(Panel_AnaliseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel10)
-                        .addGroup(Panel_AnaliseLayout.createSequentialGroup()
-                            .addGroup(Panel_AnaliseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel11)
-                                .addComponent(jLabel13)
-                                .addGroup(Panel_AnaliseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel9)))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(panelChart, javax.swing.GroupLayout.PREFERRED_SIZE, 504, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jLabel10)
+                    .addGroup(Panel_AnaliseLayout.createSequentialGroup()
+                        .addGroup(Panel_AnaliseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel13)
+                            .addGroup(Panel_AnaliseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel9)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(panelChart, javax.swing.GroupLayout.PREFERRED_SIZE, 504, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(26, 26, 26))
         );
         Panel_AnaliseLayout.setVerticalGroup(
@@ -629,6 +745,220 @@ public class Principal extends javax.swing.JFrame {
         );
 
         Panel_Body.add(Panel_Sobre, "card6");
+
+        Panel_BalancoNatura.setPreferredSize(new java.awt.Dimension(1070, 690));
+
+        jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(0, 255, 102));
+        jLabel21.setText("Balanço Patrimonial - Natura Cosmetics SA.");
+
+        BP_Empresa3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Total do Ativo",  new Float(3697.9),  new Float(3418.9)},
+                {"Imobilizado Liquido",  new Float(702.7),  new Float(711.3)},
+                {"Imobilizado Bruto",  new Float(1481.9),  new Float(1424.1)},
+                {"Deprec. Acumulada",  new Float(-779.2),  new Float(-712.8)},
+                {"Ágio, Líquido",  new Float(95.7),  new Float(93.6)},
+                {"Intangiveis, LIq",  new Float(85.2),  new Float(83.9)},
+                {"Invest. LP", null,  new Float(68.0)},
+                {"Realizável LP",  new Float(75.6),  new Float(156.9)},
+                {"Outros Ativos LP",  new Float(505.4),  new Float(312.9)},
+                {null, null, null},
+                {"Total do Passivo",  new Float(1559.6),  new Float(1485.7)},
+                {"A Pagar / Acumulado",  new Float(832.2),  new Float(765.1)},
+                {"Investimentos CP",  new Float(535.9),  new Float(531.1)},
+                {"Empréstimos CP / Notas",  new Float(22.6), null},
+                {"Parcela Circ. das Obrigações de Arredondamento Merc.",  new Float(3.1),  new Float(8.1)},
+                {"Outros Passivos Circ.",  new Float(165.8),  new Float(171.4)},
+                {null, null, null},
+                {"Total do Patrimônio Líquido",  new Float(-257.2),  new Float(-403.3)},
+                {"Ágio, Liquido",  new Float(467.8),  new Float(444.7)},
+                {"Ações Ordinárias",  new Float(189.7),  new Float(188.8)},
+                {"Capital Social",  new Float(2291.2),  new Float(2273.9)},
+                {"Lucros Retidos",  new Float(2320.3),  new Float(2322.2)},
+                {"Ações em Tesouraria",  new Float(-4600.0),  new Float(-4599.7)},
+                {"Outros Patrimônios",  new Float(-926.2),  new Float(-1033.2)},
+                {null, null, null},
+                {"Total do Passivo e Patrimônio Líquido",  new Float(3697.9),  new Float(3418.9)}
+            },
+            new String [] {
+                "Dado", "2016", "2017"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Float.class, java.lang.Float.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane7.setViewportView(BP_Empresa3);
+
+        jScrollPane8.setBackground(new java.awt.Color(43, 43, 43));
+
+        jTextArea4.setEditable(false);
+        jTextArea4.setBackground(new java.awt.Color(43, 43, 43));
+        jTextArea4.setColumns(20);
+        jTextArea4.setLineWrap(true);
+        jTextArea4.setRows(5);
+        jTextArea4.setText("Razão Social: Natura Cosmetics Inc.\nTipo: Empresa de Capital Aberto\n\nNatura é uma empresa brasileira que atua no setor de produtos de tratamento para o rosto, corpo, sabonetes, barba, desodorantes, óleos corporais, maquiagem, perfumaria, cabelos, proteção solar, e infantil. Fundada em 1969 por Antônio Luiz Seabra, hoje está presente no Brasil, Argentina, Chile, Colômbia, México, Peru, Venezuela,França e Estados Unidos, além de outros 63 países indiretamente. O número de funcionários, chamados na empresa de \"colaboradores\", atingiu 7.000 em 2013 e o de consultoras estimado em 1,5 milhão. A Natura foi criada em agosto de 1969 por Antônio Luiz Seabra após abrir uma loja e uma pequena fábrica no bairro da Vila Mariana em São Paulo, em 1974 a empresa deixou de oferecer seus produtos em lojas e passou a vendê-los no modelo de venda-direta.");
+        jTextArea4.setWrapStyleWord(true);
+        jScrollPane8.setViewportView(jTextArea4);
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/natura-logo.png"))); // NOI18N
+
+        jButton3.setText("Próximo");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Panel_BalancoNaturaLayout = new javax.swing.GroupLayout(Panel_BalancoNatura);
+        Panel_BalancoNatura.setLayout(Panel_BalancoNaturaLayout);
+        Panel_BalancoNaturaLayout.setHorizontalGroup(
+            Panel_BalancoNaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_BalancoNaturaLayout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addGroup(Panel_BalancoNaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(Panel_BalancoNaturaLayout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton3))
+                    .addGroup(Panel_BalancoNaturaLayout.createSequentialGroup()
+                        .addComponent(jLabel22)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane8))
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 933, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(76, Short.MAX_VALUE))
+        );
+        Panel_BalancoNaturaLayout.setVerticalGroup(
+            Panel_BalancoNaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_BalancoNaturaLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(Panel_BalancoNaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(jButton3))
+                .addGap(18, 18, 18)
+                .addGroup(Panel_BalancoNaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Panel_BalancoNaturaLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel22)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE)
+                .addGap(34, 34, 34))
+        );
+
+        Panel_Body.add(Panel_BalancoNatura, "card7");
+
+        Panel_BalancoUltaBeauty.setPreferredSize(new java.awt.Dimension(1070, 690));
+
+        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(0, 255, 102));
+        jLabel23.setText("Balanço Patrimonial - Ulta Beauty Inc.");
+
+        BP_Empresa4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Total do Ativo",  new Float(3697.9),  new Float(3418.9)},
+                {"Imobilizado Liquido",  new Float(702.7),  new Float(711.3)},
+                {"Imobilizado Bruto",  new Float(1481.9),  new Float(1424.1)},
+                {"Deprec. Acumulada",  new Float(-779.2),  new Float(-712.8)},
+                {"Ágio, Líquido",  new Float(95.7),  new Float(93.6)},
+                {"Intangiveis, LIq",  new Float(85.2),  new Float(83.9)},
+                {"Invest. LP", null,  new Float(68.0)},
+                {"Realizável LP",  new Float(75.6),  new Float(156.9)},
+                {"Outros Ativos LP",  new Float(505.4),  new Float(312.9)},
+                {null, null, null},
+                {"Total do Passivo",  new Float(1559.6),  new Float(1485.7)},
+                {"A Pagar / Acumulado",  new Float(832.2),  new Float(765.1)},
+                {"Investimentos CP",  new Float(535.9),  new Float(531.1)},
+                {"Empréstimos CP / Notas",  new Float(22.6), null},
+                {"Parcela Circ. das Obrigações de Arredondamento Merc.",  new Float(3.1),  new Float(8.1)},
+                {"Outros Passivos Circ.",  new Float(165.8),  new Float(171.4)},
+                {null, null, null},
+                {"Total do Patrimônio Líquido",  new Float(-257.2),  new Float(-403.3)},
+                {"Ágio, Liquido",  new Float(467.8),  new Float(444.7)},
+                {"Ações Ordinárias",  new Float(189.7),  new Float(188.8)},
+                {"Capital Social",  new Float(2291.2),  new Float(2273.9)},
+                {"Lucros Retidos",  new Float(2320.3),  new Float(2322.2)},
+                {"Ações em Tesouraria",  new Float(-4600.0),  new Float(-4599.7)},
+                {"Outros Patrimônios",  new Float(-926.2),  new Float(-1033.2)},
+                {null, null, null},
+                {"Total do Passivo e Patrimônio Líquido",  new Float(3697.9),  new Float(3418.9)}
+            },
+            new String [] {
+                "Dado", "2016", "2017"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Float.class, java.lang.Float.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane9.setViewportView(BP_Empresa4);
+
+        jScrollPane10.setBackground(new java.awt.Color(43, 43, 43));
+
+        jTextArea5.setEditable(false);
+        jTextArea5.setBackground(new java.awt.Color(43, 43, 43));
+        jTextArea5.setColumns(20);
+        jTextArea5.setLineWrap(true);
+        jTextArea5.setRows(5);
+        jTextArea5.setText("Razão Social: Ulta Beauty Inc.\nTipo: Empresa de Capital Aberto\n\nUlta Beauty Inc. (anteriormente conhecida como Ulta Salon, Cosméticos e Fragrâncias Inc. até janeiro de 2017), é uma cadeia de lojas de beleza nos Estados Unidos, com sede em Bolingbrook, Illinois.Ulta Beauty carrega marcas de cosméticos e cuidados com a pele, fragrâncias masculinas e femininas e produtos capilares. Cada loja também é equipada com um salão de beleza.\nA Ulta Beauty oferece cosméticos, produtos para a pele e fragrâncias de alta qualidade e de farmácia, além de sua própria marca de maquiagem, produtos para banho e corpo, produtos para a pele, cabelos, esmaltes e fragrâncias.");
+        jTextArea5.setWrapStyleWord(true);
+        jScrollPane10.setViewportView(jTextArea5);
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ulta-logo.png"))); // NOI18N
+
+        jButton4.setText("Próximo");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Panel_BalancoUltaBeautyLayout = new javax.swing.GroupLayout(Panel_BalancoUltaBeauty);
+        Panel_BalancoUltaBeauty.setLayout(Panel_BalancoUltaBeautyLayout);
+        Panel_BalancoUltaBeautyLayout.setHorizontalGroup(
+            Panel_BalancoUltaBeautyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_BalancoUltaBeautyLayout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addGroup(Panel_BalancoUltaBeautyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(Panel_BalancoUltaBeautyLayout.createSequentialGroup()
+                        .addComponent(jLabel24)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane10))
+                    .addGroup(Panel_BalancoUltaBeautyLayout.createSequentialGroup()
+                        .addComponent(jLabel23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 436, Short.MAX_VALUE)
+                        .addComponent(jButton4))
+                    .addComponent(jScrollPane9))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Panel_BalancoUltaBeautyLayout.setVerticalGroup(
+            Panel_BalancoUltaBeautyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_BalancoUltaBeautyLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(Panel_BalancoUltaBeautyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(jButton4))
+                .addGap(18, 18, 18)
+                .addGroup(Panel_BalancoUltaBeautyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Panel_BalancoUltaBeautyLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel24)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE)
+                .addGap(34, 34, 34))
+        );
+
+        Panel_Body.add(Panel_BalancoUltaBeauty, "card8");
 
         bg.add(Panel_Body, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 1070, 690));
 
@@ -729,6 +1059,21 @@ public class Principal extends javax.swing.JFrame {
         Panel_Opcao5.setBackground(new java.awt.Color(11, 12, 12));
         Label_About.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N   
     }//GEN-LAST:event_Label_AboutMouseExited
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        CardLayout layout = (CardLayout)Panel_Body.getLayout();
+        layout.show(Panel_Body,"card7");
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        CardLayout layout = (CardLayout)Panel_Body.getLayout();
+        layout.show(Panel_Body,"card8");
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        CardLayout layout = (CardLayout)Panel_Body.getLayout();
+        layout.show(Panel_Body,"card3");
+    }//GEN-LAST:event_jButton4ActionPerformed
         
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -742,6 +1087,9 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable BP_Empresa1;
+    private javax.swing.JTable BP_Empresa3;
+    private javax.swing.JTable BP_Empresa4;
     private javax.swing.JLabel Icon_Bank;
     private javax.swing.JLabel Icon_Chart;
     private javax.swing.JLabel Icon_Chart1;
@@ -758,7 +1106,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel Label_Relatorio;
     private javax.swing.JLabel Label_We;
     private javax.swing.JPanel Panel_Analise;
-    private javax.swing.JPanel Panel_Balanco;
+    private javax.swing.JPanel Panel_BalancoAvon;
+    private javax.swing.JPanel Panel_BalancoNatura;
+    private javax.swing.JPanel Panel_BalancoUltaBeauty;
     private javax.swing.JPanel Panel_Body;
     private javax.swing.JPanel Panel_Opcao1;
     private javax.swing.JPanel Panel_Opcao2;
@@ -771,6 +1121,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel SidePane;
     private javax.swing.JTable Tabela;
     private javax.swing.JPanel bg;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -779,7 +1132,13 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -790,10 +1149,19 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
     private javax.swing.JPanel panelChart;
     // End of variables declaration//GEN-END:variables
 }

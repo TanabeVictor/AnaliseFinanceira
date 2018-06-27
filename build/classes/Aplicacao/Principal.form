@@ -758,7 +758,15 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="Panel_Balanco">
+            <Container class="javax.swing.JPanel" name="Panel_BalancoAvon">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1070, 690]"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="Principal_Panel_BalancoAvon"/>
+              </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card3"/>
@@ -768,15 +776,226 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="1070" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane4" min="-2" pref="835" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane3" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="690" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane4" min="-2" pref="130" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                  <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane3" pref="413" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel17">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="24" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="66" green="ff" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Balan&#xe7;o Patrimonial - Avon Products Inc."/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="BP_Empresa1">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="3" rowCount="26">
+                            <Column editable="true" title="Dado" type="java.lang.String">
+                              <Data value="Total do Ativo"/>
+                              <Data value="Imobilizado Liquido"/>
+                              <Data value="Imobilizado Bruto"/>
+                              <Data value="Deprec. Acumulada"/>
+                              <Data value="&#xc1;gio, L&#xed;quido"/>
+                              <Data value="Intangiveis, LIq"/>
+                              <Data value="Invest. LP"/>
+                              <Data value="Realiz&#xe1;vel LP"/>
+                              <Data value="Outros Ativos LP"/>
+                              <Data value="null"/>
+                              <Data value="Total do Passivo"/>
+                              <Data value="A Pagar / Acumulado"/>
+                              <Data value="Investimentos CP"/>
+                              <Data value="Empr&#xe9;stimos CP / Notas"/>
+                              <Data value="Parcela Circ. das Obriga&#xe7;&#xf5;es de Arredondamento Merc."/>
+                              <Data value="Outros Passivos Circ."/>
+                              <Data value="null"/>
+                              <Data value="Total do Patrim&#xf4;nio L&#xed;quido"/>
+                              <Data value="&#xc1;gio, Liquido"/>
+                              <Data value="A&#xe7;&#xf5;es Ordin&#xe1;rias"/>
+                              <Data value="Capital Social"/>
+                              <Data value="Lucros Retidos"/>
+                              <Data value="A&#xe7;&#xf5;es em Tesouraria"/>
+                              <Data value="Outros Patrim&#xf4;nios"/>
+                              <Data value="null"/>
+                              <Data value="Total do Passivo e Patrim&#xf4;nio L&#xed;quido"/>
+                            </Column>
+                            <Column editable="true" title="2016" type="java.lang.Float">
+                              <Data value="3697.9"/>
+                              <Data value="702.7"/>
+                              <Data value="1481.9"/>
+                              <Data value="-779.2"/>
+                              <Data value="95.7"/>
+                              <Data value="85.2"/>
+                              <Data value="null"/>
+                              <Data value="75.6"/>
+                              <Data value="505.4"/>
+                              <Data value="null"/>
+                              <Data value="1559.6"/>
+                              <Data value="832.2"/>
+                              <Data value="535.9"/>
+                              <Data value="22.6"/>
+                              <Data value="3.1"/>
+                              <Data value="165.8"/>
+                              <Data value="null"/>
+                              <Data value="-257.2"/>
+                              <Data value="467.8"/>
+                              <Data value="189.7"/>
+                              <Data value="2291.2"/>
+                              <Data value="2320.3"/>
+                              <Data value="-4600.0"/>
+                              <Data value="-926.2"/>
+                              <Data value="null"/>
+                              <Data value="3697.9"/>
+                            </Column>
+                            <Column editable="true" title="2017" type="java.lang.Float">
+                              <Data value="3418.9"/>
+                              <Data value="711.3"/>
+                              <Data value="1424.1"/>
+                              <Data value="-712.8"/>
+                              <Data value="93.6"/>
+                              <Data value="83.9"/>
+                              <Data value="68.0"/>
+                              <Data value="156.9"/>
+                              <Data value="312.9"/>
+                              <Data value="null"/>
+                              <Data value="1485.7"/>
+                              <Data value="765.1"/>
+                              <Data value="531.1"/>
+                              <Data value="null"/>
+                              <Data value="8.1"/>
+                              <Data value="171.4"/>
+                              <Data value="null"/>
+                              <Data value="-403.3"/>
+                              <Data value="444.7"/>
+                              <Data value="188.8"/>
+                              <Data value="2273.9"/>
+                              <Data value="2322.2"/>
+                              <Data value="-4599.7"/>
+                              <Data value="-1033.2"/>
+                              <Data value="null"/>
+                              <Data value="3418.9"/>
+                            </Column>
+                          </Table>
+                        </Property>
+                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                          <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                          </TableColumnModel>
+                        </Property>
+                        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="2b" green="2b" red="2b" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="jTextArea2">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="2b" green="2b" red="2b" type="rgb"/>
+                        </Property>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="lineWrap" type="boolean" value="true"/>
+                        <Property name="rows" type="int" value="5"/>
+                        <Property name="text" type="java.lang.String" value="Raz&#xe3;o Social: Avon Products Inc.&#xa;Tipo: Empresa de Capital Aberto&#xa;&#xa;Avon Cosm&#xe9;ticos ou simplesmente Avon, &#xe9; uma empresa norte-americana de cosm&#xe9;ticos. Sua hist&#xf3;ria teve in&#xed;cio em 1886 quando David McConnell iniciou a Calif&#xf3;rnia Perfume Company, em Manhattan, Nova York. O nome Avon, pelo qual ficaria mundialmente conhecida, s&#xf3; surgiu em 1939, inspirado na cidade natal do escritor William Shakespeare, Stratford-upon-Avon. No Brasil ela s&#xf3; apareceu em 1952. Ao longo dos anos a Avon desenvolveu diversas linhas de produto, variando entre fragr&#xe2;ncias, maquiagem, cabelos e cuidados da pele, al&#xe9;m de uma linha infantil. Atrav&#xe9;s do sistema de venda por folhetos e revendedoras, atingindo significativa participa&#xe7;&#xe3;o no mercado de beleza."/>
+                        <Property name="wrapStyleWord" type="boolean" value="true"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="jLabel18">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Images/avon-logo.png"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="jButton2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Pr&#xf3;ximo"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="Panel_Relatorio">
               <Constraints>
@@ -827,20 +1046,18 @@
                                       </Group>
                                   </Group>
                               </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                              <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                          </Group>
+                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="panelChart" min="-2" pref="504" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="panelChart" min="-2" pref="504" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
@@ -1032,6 +1249,478 @@
                   </Group>
                 </DimensionLayout>
               </Layout>
+            </Container>
+            <Container class="javax.swing.JPanel" name="Panel_BalancoNatura">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1070, 690]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card7"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane8" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane7" alignment="0" min="-2" pref="933" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="76" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane8" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                  <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane7" pref="413" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel21">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="24" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="66" green="ff" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Balan&#xe7;o Patrimonial - Natura Cosmetics SA."/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="BP_Empresa3">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="3" rowCount="26">
+                            <Column editable="true" title="Dado" type="java.lang.String">
+                              <Data value="Total do Ativo"/>
+                              <Data value="Imobilizado Liquido"/>
+                              <Data value="Imobilizado Bruto"/>
+                              <Data value="Deprec. Acumulada"/>
+                              <Data value="&#xc1;gio, L&#xed;quido"/>
+                              <Data value="Intangiveis, LIq"/>
+                              <Data value="Invest. LP"/>
+                              <Data value="Realiz&#xe1;vel LP"/>
+                              <Data value="Outros Ativos LP"/>
+                              <Data value="null"/>
+                              <Data value="Total do Passivo"/>
+                              <Data value="A Pagar / Acumulado"/>
+                              <Data value="Investimentos CP"/>
+                              <Data value="Empr&#xe9;stimos CP / Notas"/>
+                              <Data value="Parcela Circ. das Obriga&#xe7;&#xf5;es de Arredondamento Merc."/>
+                              <Data value="Outros Passivos Circ."/>
+                              <Data value="null"/>
+                              <Data value="Total do Patrim&#xf4;nio L&#xed;quido"/>
+                              <Data value="&#xc1;gio, Liquido"/>
+                              <Data value="A&#xe7;&#xf5;es Ordin&#xe1;rias"/>
+                              <Data value="Capital Social"/>
+                              <Data value="Lucros Retidos"/>
+                              <Data value="A&#xe7;&#xf5;es em Tesouraria"/>
+                              <Data value="Outros Patrim&#xf4;nios"/>
+                              <Data value="null"/>
+                              <Data value="Total do Passivo e Patrim&#xf4;nio L&#xed;quido"/>
+                            </Column>
+                            <Column editable="true" title="2016" type="java.lang.Float">
+                              <Data value="3697.9"/>
+                              <Data value="702.7"/>
+                              <Data value="1481.9"/>
+                              <Data value="-779.2"/>
+                              <Data value="95.7"/>
+                              <Data value="85.2"/>
+                              <Data value="null"/>
+                              <Data value="75.6"/>
+                              <Data value="505.4"/>
+                              <Data value="null"/>
+                              <Data value="1559.6"/>
+                              <Data value="832.2"/>
+                              <Data value="535.9"/>
+                              <Data value="22.6"/>
+                              <Data value="3.1"/>
+                              <Data value="165.8"/>
+                              <Data value="null"/>
+                              <Data value="-257.2"/>
+                              <Data value="467.8"/>
+                              <Data value="189.7"/>
+                              <Data value="2291.2"/>
+                              <Data value="2320.3"/>
+                              <Data value="-4600.0"/>
+                              <Data value="-926.2"/>
+                              <Data value="null"/>
+                              <Data value="3697.9"/>
+                            </Column>
+                            <Column editable="true" title="2017" type="java.lang.Float">
+                              <Data value="3418.9"/>
+                              <Data value="711.3"/>
+                              <Data value="1424.1"/>
+                              <Data value="-712.8"/>
+                              <Data value="93.6"/>
+                              <Data value="83.9"/>
+                              <Data value="68.0"/>
+                              <Data value="156.9"/>
+                              <Data value="312.9"/>
+                              <Data value="null"/>
+                              <Data value="1485.7"/>
+                              <Data value="765.1"/>
+                              <Data value="531.1"/>
+                              <Data value="null"/>
+                              <Data value="8.1"/>
+                              <Data value="171.4"/>
+                              <Data value="null"/>
+                              <Data value="-403.3"/>
+                              <Data value="444.7"/>
+                              <Data value="188.8"/>
+                              <Data value="2273.9"/>
+                              <Data value="2322.2"/>
+                              <Data value="-4599.7"/>
+                              <Data value="-1033.2"/>
+                              <Data value="null"/>
+                              <Data value="3418.9"/>
+                            </Column>
+                          </Table>
+                        </Property>
+                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                          <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                          </TableColumnModel>
+                        </Property>
+                        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane8">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="2b" green="2b" red="2b" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="jTextArea4">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="2b" green="2b" red="2b" type="rgb"/>
+                        </Property>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="lineWrap" type="boolean" value="true"/>
+                        <Property name="rows" type="int" value="5"/>
+                        <Property name="text" type="java.lang.String" value="Raz&#xe3;o Social: Natura Cosmetics Inc.&#xa;Tipo: Empresa de Capital Aberto&#xa;&#xa;Natura &#xe9; uma empresa brasileira que atua no setor de produtos de tratamento para o rosto, corpo, sabonetes, barba, desodorantes, &#xf3;leos corporais, maquiagem, perfumaria, cabelos, prote&#xe7;&#xe3;o solar, e infantil. Fundada em 1969 por Ant&#xf4;nio Luiz Seabra, hoje est&#xe1; presente no Brasil, Argentina, Chile, Col&#xf4;mbia, M&#xe9;xico, Peru, Venezuela,Fran&#xe7;a e Estados Unidos, al&#xe9;m de outros 63 pa&#xed;ses indiretamente. O n&#xfa;mero de funcion&#xe1;rios, chamados na empresa de &quot;colaboradores&quot;, atingiu 7.000 em 2013 e o de consultoras estimado em 1,5 milh&#xe3;o. A Natura foi criada em agosto de 1969 por Ant&#xf4;nio Luiz Seabra ap&#xf3;s abrir uma loja e uma pequena f&#xe1;brica no bairro da Vila Mariana em S&#xe3;o Paulo, em 1974 a empresa deixou de oferecer seus produtos em lojas e passou a vend&#xea;-los no modelo de venda-direta."/>
+                        <Property name="wrapStyleWord" type="boolean" value="true"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="jLabel22">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Images/natura-logo.png"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="jButton3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Pr&#xf3;ximo"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="Panel_BalancoUltaBeauty">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1070, 690]"/>
+                </Property>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="card8"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane10" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="436" max="32767" attributes="0"/>
+                                  <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane9" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane10" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                  <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane9" pref="413" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel23">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="24" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="66" green="ff" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Balan&#xe7;o Patrimonial - Ulta Beauty Inc."/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="BP_Empresa4">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="3" rowCount="26">
+                            <Column editable="true" title="Dado" type="java.lang.String">
+                              <Data value="Total do Ativo"/>
+                              <Data value="Imobilizado Liquido"/>
+                              <Data value="Imobilizado Bruto"/>
+                              <Data value="Deprec. Acumulada"/>
+                              <Data value="&#xc1;gio, L&#xed;quido"/>
+                              <Data value="Intangiveis, LIq"/>
+                              <Data value="Invest. LP"/>
+                              <Data value="Realiz&#xe1;vel LP"/>
+                              <Data value="Outros Ativos LP"/>
+                              <Data value="null"/>
+                              <Data value="Total do Passivo"/>
+                              <Data value="A Pagar / Acumulado"/>
+                              <Data value="Investimentos CP"/>
+                              <Data value="Empr&#xe9;stimos CP / Notas"/>
+                              <Data value="Parcela Circ. das Obriga&#xe7;&#xf5;es de Arredondamento Merc."/>
+                              <Data value="Outros Passivos Circ."/>
+                              <Data value="null"/>
+                              <Data value="Total do Patrim&#xf4;nio L&#xed;quido"/>
+                              <Data value="&#xc1;gio, Liquido"/>
+                              <Data value="A&#xe7;&#xf5;es Ordin&#xe1;rias"/>
+                              <Data value="Capital Social"/>
+                              <Data value="Lucros Retidos"/>
+                              <Data value="A&#xe7;&#xf5;es em Tesouraria"/>
+                              <Data value="Outros Patrim&#xf4;nios"/>
+                              <Data value="null"/>
+                              <Data value="Total do Passivo e Patrim&#xf4;nio L&#xed;quido"/>
+                            </Column>
+                            <Column editable="true" title="2016" type="java.lang.Float">
+                              <Data value="3697.9"/>
+                              <Data value="702.7"/>
+                              <Data value="1481.9"/>
+                              <Data value="-779.2"/>
+                              <Data value="95.7"/>
+                              <Data value="85.2"/>
+                              <Data value="null"/>
+                              <Data value="75.6"/>
+                              <Data value="505.4"/>
+                              <Data value="null"/>
+                              <Data value="1559.6"/>
+                              <Data value="832.2"/>
+                              <Data value="535.9"/>
+                              <Data value="22.6"/>
+                              <Data value="3.1"/>
+                              <Data value="165.8"/>
+                              <Data value="null"/>
+                              <Data value="-257.2"/>
+                              <Data value="467.8"/>
+                              <Data value="189.7"/>
+                              <Data value="2291.2"/>
+                              <Data value="2320.3"/>
+                              <Data value="-4600.0"/>
+                              <Data value="-926.2"/>
+                              <Data value="null"/>
+                              <Data value="3697.9"/>
+                            </Column>
+                            <Column editable="true" title="2017" type="java.lang.Float">
+                              <Data value="3418.9"/>
+                              <Data value="711.3"/>
+                              <Data value="1424.1"/>
+                              <Data value="-712.8"/>
+                              <Data value="93.6"/>
+                              <Data value="83.9"/>
+                              <Data value="68.0"/>
+                              <Data value="156.9"/>
+                              <Data value="312.9"/>
+                              <Data value="null"/>
+                              <Data value="1485.7"/>
+                              <Data value="765.1"/>
+                              <Data value="531.1"/>
+                              <Data value="null"/>
+                              <Data value="8.1"/>
+                              <Data value="171.4"/>
+                              <Data value="null"/>
+                              <Data value="-403.3"/>
+                              <Data value="444.7"/>
+                              <Data value="188.8"/>
+                              <Data value="2273.9"/>
+                              <Data value="2322.2"/>
+                              <Data value="-4599.7"/>
+                              <Data value="-1033.2"/>
+                              <Data value="null"/>
+                              <Data value="3418.9"/>
+                            </Column>
+                          </Table>
+                        </Property>
+                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                          <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                          </TableColumnModel>
+                        </Property>
+                        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane10">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="2b" green="2b" red="2b" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="jTextArea5">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="2b" green="2b" red="2b" type="rgb"/>
+                        </Property>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="lineWrap" type="boolean" value="true"/>
+                        <Property name="rows" type="int" value="5"/>
+                        <Property name="text" type="java.lang.String" value="Raz&#xe3;o Social: Ulta Beauty Inc.&#xa;Tipo: Empresa de Capital Aberto&#xa;&#xa;Ulta Beauty Inc. (anteriormente conhecida como Ulta Salon, Cosm&#xe9;ticos e Fragr&#xe2;ncias Inc. at&#xe9; janeiro de 2017), &#xe9; uma cadeia de lojas de beleza nos Estados Unidos, com sede em Bolingbrook, Illinois.Ulta Beauty carrega marcas de cosm&#xe9;ticos e cuidados com a pele, fragr&#xe2;ncias masculinas e femininas e produtos capilares. Cada loja tamb&#xe9;m &#xe9; equipada com um sal&#xe3;o de beleza.&#xa;A Ulta Beauty oferece cosm&#xe9;ticos, produtos para a pele e fragr&#xe2;ncias de alta qualidade e de farm&#xe1;cia, al&#xe9;m de sua pr&#xf3;pria marca de maquiagem, produtos para banho e corpo, produtos para a pele, cabelos, esmaltes e fragr&#xe2;ncias."/>
+                        <Property name="wrapStyleWord" type="boolean" value="true"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="jLabel24">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/Images/ulta-logo.png"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="jButton4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Pr&#xf3;ximo"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
             </Container>
           </SubComponents>
         </Container>
